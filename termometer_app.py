@@ -29,6 +29,7 @@ if __name__ == '__main__':
   termometer = Termometer()
   termometer_interface = TermometerInterface()
 
+  # assign routine to do conversion
   termometer_interface.set_do_conversion(lambda:do_conversion(termometer, termometer_interface))
 
   termometer_interface.mainloop()
