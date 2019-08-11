@@ -1,17 +1,7 @@
 #!/usr/local/bin/python3
-"""""""""""""""""""""""""""""""""""""""""""""""
-for more informaton about testing :
-https://docs.python.org/3/library/unittest.html
-
-    if src_term == my_termo.celcius_termo:
-      result = temperature 
-    elif src_term == my_termo.fahreinheit_termo:
-      result = self.fahreinheit_to_celcius(temperature)
-    elif src_term == my_termo.riomer_termo:
-      result = self.riomer_to_celcius(temperature)
-    elif src_term == my_termo.kelvin_termo: 
-
-"""""""""""""""""""""""""""""""""""""""""""""""
+""" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+for more informaton about testing : https://docs.python.org/3/library/unittest.html
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" """
 
 import unittest
 from termometer import Termometer
@@ -19,7 +9,10 @@ from termometer import Termometer
 my_termo = Termometer()
 
 class TermometerTest(unittest.TestCase): # class must inherit unittest.TestCase
-
+  """ """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+  this class is for testing Termometer class to see if it works well or not. 
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" """
+  
   def test_celcius_celcius(self): # name of method begins with 'test'
     self.assertEqual(my_termo.convert_temperature(my_termo.celcius_termo, my_termo.celcius_termo, 100), 100) 
 
