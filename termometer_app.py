@@ -1,5 +1,11 @@
 #!/usr/local/bin/python3
 
+######################################################################################
+# this script shows how to get inputs from termometer GUI and pass the inputs into
+# Termometer class for further processing until result is returned. Then the result
+# is passed it into termometer GUI to be displayed to user
+######################################################################################
+
 from termometer import Termometer
 from termometer_gui import TermometerInterface
 from tkinter import messagebox
