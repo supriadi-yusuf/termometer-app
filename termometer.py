@@ -3,6 +3,10 @@
 from termo_type import TermoType
 
 class Termometer(TermoType):
+  """ """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+  this class show how temperature is converted from one termometer type 
+  into other termometer type.
+  """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" """
 
   @staticmethod
   def celcius_to_riomer(temperature):
