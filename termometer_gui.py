@@ -4,7 +4,12 @@ from tkinter import Tk, Frame, LabelFrame, Button, Label, LEFT, CENTER, Radiobut
 from termo_type import TermoType
 
 class TermometerInterface(Tk):
-
+  """ """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+  this class defines how termometer application interface looks
+  like. this class is for collecting application input and 
+  output to user.
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""" """
+  
   def __init__(self, *args, **kwargs):
     super(TermometerInterface, self).__init__(*args, **kwargs)
     self.title('Termometer Conversion') 
