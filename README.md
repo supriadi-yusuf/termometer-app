@@ -1,1 +1,1 @@
-termometer is an instrument to capture temperature. There four kinds of termometer. They are : celcius, fahreinheit, riomer and kelvin. This application is for converting a temperature from one termometer to another termometer.
+termometer is an instrument to capture temperature. There are four kinds of termometer. They are : celcius, fahreinheit, riomer and kelvin. This application is for converting a temperature from one termometer to another termometer.
