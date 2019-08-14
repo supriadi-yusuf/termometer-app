@@ -8,7 +8,6 @@
 
 from termometer import Termometer
 from termometer_gui import TermometerInterface
-from tkinter import messagebox
 
 def do_conversion(termometer, termometer_interface):
   current_term = termometer_interface.get_current_termo()
@@ -19,7 +18,7 @@ def do_conversion(termometer, termometer_interface):
   try:
     temperature = float(temperature)
   except:
-    messagebox.showerror('Error', 'Please type a correct number!')
+    termometer_interface.show_error() # it should not be allowed. fix this!
   else:
     result = termometer.convert_temperature( current_term, convert_to_term, temperature)
     result = "%.2f" % (result)

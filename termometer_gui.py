@@ -1,6 +1,7 @@
 #!/usr/local/bin/python3
 
 from tkinter import Tk, Frame, LabelFrame, Button, Label, LEFT, CENTER, Radiobutton, W, X, StringVar, Entry, DISABLED
+from tkinter import messagebox
 from termo_type import TermoType
 
 class TermometerInterface(Tk):
@@ -102,6 +103,9 @@ class TermometerInterface(Tk):
 
   def set_do_conversion(self, do_conversion): 
     self.__do_conversion = do_conversion 
+
+  def show_error(self):
+    messagebox.showerror('Error', 'Temperature value must be number !!')
 
 if __name__ == '__main__':
   layar = TermometerInterface()
